@@ -2,8 +2,6 @@ library(plyr)
 library(reshape2)
 library(tidyr)
 
-test
-
 dat <- read.csv(file = 'data/201508_trip_data.csv', stringsAsFactors = FALSE)
 names(dat) <- c("id", "dur", "bDate","bStation", "bTerm", "eDate", "eStation", "eTerm", "bike", "subType", "zip")
 lu <- read.csv(file = 'data/201508_station_data.csv', stringsAsFactors = FALSE)
